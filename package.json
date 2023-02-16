@@ -4,9 +4,9 @@
   "description": "",
   "main": "layaAir.config.js",
   "scripts": {
-    "build": "cd src/publishTool&&cmd /k publish.bat",
+    "build": "cd src/publishTool&& . publish.sh",
     "compile": "gulp LayaAirBuild",
-    "buildDoc": "cd src/generateDoc&&cmd /k run.bat"
+    "buildDoc": "cd src/generateDoc&& . run.sh"
   },
   "author": "Layabox Inc.",
   "license": "SEE LICENSE IN LICENSE.md",

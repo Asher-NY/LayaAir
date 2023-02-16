@@ -191,6 +191,8 @@ export class Dialog extends View {
     group: string;
     /**是否是模式窗口*/
     isModal: boolean;
+    /**额外数据*/
+    data:any;
     /**是否显示弹出效果*/
     isShowEffect: boolean = true;
     /**指定对话框是否居中弹。<p>如果值为true，则居中弹出，否则，则根据对象坐标显示，默认为true。</p>*/
