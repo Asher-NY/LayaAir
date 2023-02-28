@@ -203,7 +203,9 @@ export class ComboBox extends UIComponent {
 
     private _createList(): void {
         this._list = new List();
-        if (this._scrollBarSkin) this._list.vScrollBarSkin = this._scrollBarSkin;
+        if (this._scrollBarSkin != null && this._scrollBarSkin != undefined) {
+            this._list.vScrollBarSkin = this._scrollBarSkin;
+        }
         this._setListEvent(this._list);
     }
 
@@ -421,7 +423,7 @@ export class ComboBox extends UIComponent {
     get defaultLabel(): string {
         return this._defaultLabel;
     }
-    
+
     set defaultLabel(value: string) {
         this._defaultLabel = value;
         this._selectedIndex < 0 && (this._button.label = value);
